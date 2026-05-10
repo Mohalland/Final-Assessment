@@ -10,6 +10,7 @@ import app as task_app
 
 def test_homepage_loads():
     task_app.app.config['TESTING'] = True
+    task_app.app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///:memory:'
     with task_app.app.test_client() as client:
         response = client.get('/')
         assert response.status_code == 200
@@ -18,6 +19,7 @@ def test_homepage_loads():
 
 def test_api_create_and_list_task():
     task_app.app.config['TESTING'] = True
+    task_app.app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///:memory:'
     with task_app.app.app_context():
         task_app.db.drop_all()
         task_app.db.create_all()

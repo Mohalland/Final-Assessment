@@ -71,5 +71,5 @@ pip install -r source_code/requirements.txt
 pytest testing
 ```
 
-## Deployment
-Use the deployment guide in `deployment/deployment_pipeline.md`.
+## CI/CD
+The project includes GitHub Actions for continuous integration and deployment. See `deployment/deployment_pipeline.md` for details.

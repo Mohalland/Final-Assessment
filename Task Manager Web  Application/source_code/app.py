@@ -7,8 +7,8 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
 if not app.config['SQLALCHEMY_DATABASE_URI']:
     raise RuntimeError(
-        'DATABASE_URL environment variable must be set to a MySQL connection string, '
-        'for example: mysql+pymysql://taskuser:taskpass@db/tasks when running in Docker Compose'
+        'DATABASE_URL environment variable must be set to a PostgreSQL connection string, '
+        'for example: postgresql://taskuser:taskpass@db:5432/tasks when running in Docker Compose'
     )
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 

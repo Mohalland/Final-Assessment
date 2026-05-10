@@ -31,15 +31,15 @@ The application is deployed to Render.com, a cloud hosting provider that support
    - **Dockerfile Path**: Dockerfile (in root)
    - **Docker Command**: (leave blank, uses CMD from Dockerfile)
 6. Set environment variables:
-   - **DATABASE_URL**: Set to your Render MySQL database connection string, e.g., `mysql+pymysql://user:pass@host/dbname`
-7. For the database, create a separate MySQL service on Render:
-   - Go to Render dashboard, "New +" > "Database" > "MySQL"
+   - **DATABASE_URL**: Set to your Render PostgreSQL database connection string, e.g., `postgresql://user:password@host:5432/dbname`
+7. For the database, create a separate PostgreSQL service on Render:
+   - Go to Render dashboard, "New +" > "Database" > "PostgreSQL"
    - Note the connection string and update DATABASE_URL accordingly
 8. Deploy the web service.
 9. Once deployed, the app will be available at the generated Render URL.
 
 ## Environment Variables for Render
-- `DATABASE_URL`: Set to your Render MySQL database connection string
+- `DATABASE_URL`: Set to your Render PostgreSQL database connection string
 
 ## Local Test Commands
 ```bash

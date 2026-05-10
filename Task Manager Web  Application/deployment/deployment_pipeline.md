@@ -27,8 +27,8 @@ The application is deployed to Render.com, a cloud hosting provider that support
    - **Environment**: Docker
    - **Region**: Choose closest to your users (e.g., Oregon)
    - **Branch**: main
-   - **Root Directory**: (leave blank, or specify if needed)
-   - **Dockerfile Path**: Dockerfile (in root)
+   - **Root Directory**: Task Manager Web  Application
+   - **Dockerfile Path**: Dockerfile
    - **Docker Command**: (leave blank, uses CMD from Dockerfile)
 6. Set environment variables:
    - **DATABASE_URL**: Set to your Render PostgreSQL database connection string, e.g., `postgresql://user:password@host:5432/dbname`

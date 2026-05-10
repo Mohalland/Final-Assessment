@@ -27,7 +27,7 @@ The application is deployed to Render.com, a cloud hosting provider that support
    - **Environment**: Docker
    - **Region**: Choose closest to your users (e.g., Oregon)
    - **Branch**: main
-   - **Root Directory**: Task Manager Web  Application
+   - **Root Directory**: (leave blank)
    - **Dockerfile Path**: Dockerfile
    - **Docker Command**: (leave blank, uses CMD from Dockerfile)
 6. Set environment variables:

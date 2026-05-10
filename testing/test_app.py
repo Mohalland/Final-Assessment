@@ -2,6 +2,8 @@ import os
 import sys
 import tempfile
 
+os.environ.setdefault('DATABASE_URL', 'sqlite:///:memory:')
+
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'source_code'))
 sys.path.insert(0, PROJECT_ROOT)
 

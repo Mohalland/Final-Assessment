@@ -72,4 +72,4 @@ pytest testing
 ```
 
 ## CI/CD
-The project includes GitHub Actions for continuous integration and deployment. See `deployment/deployment_pipeline.md` for details.
+The project includes GitHub Actions for continuous integration and deployment. See `deployment/deployment_pipeline.md` for details on deploying to Render.com.
